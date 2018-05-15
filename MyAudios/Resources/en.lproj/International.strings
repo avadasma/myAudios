@@ -1,0 +1,30 @@
+/* 
+  International.strings
+  MyAudios
+
+  Created by chang on 2017/9/6.
+  Copyright © 2017年 chang. All rights reserved.
+*/
+
+"MFAboutViewController_01000" = "沐风影音";
+"MFAboutViewController_01001" = "微信好友";
+"MFAboutViewController_01002" = "微信朋友圈";
+"MFAboutViewController_01003" = "QQ";
+"MFAboutViewController_01004" = "QQ空间";
+"MFAboutViewController_01005" = "新浪微博";
+"MFAboutViewController_01006" = "复制链接";
+"MFAboutViewController_01007" = "短信";
+"MFAboutViewController_01008" = "邮件";
+"MFAboutViewController_01009" = "分享失败";
+"MFAboutViewController_01010" = "您还未安装新浪微博";
+"MFAboutViewController_01011" = "您还未安装微信客户端！";
+"MFAboutViewController_01012" = "设备不支持邮件功能或者邮件未配置";
+"MFAboutViewController_01013" = "用户取消发送";
+"MFAboutViewController_01014" = "已保存";
+"MFAboutViewController_01015" = "已发送";
+"MFAboutViewController_01016" = "发送失败";
+"MFAboutViewController_01017" = "设备不支持短信功能";
+"MFAboutViewController_01018" = "取消";
+"MFAboutViewController_01019" = "微信";
+
+"SettingViewController_00001" = "我刚刚在使用沐风影音，感觉非常好用，赶紧去下载一个吧！客户端下载地址：%@";

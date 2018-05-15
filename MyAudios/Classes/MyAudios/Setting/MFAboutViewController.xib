@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFAboutViewController">
+            <connections>
+                <outlet property="appNameLbl" destination="ULz-1J-Mgq" id="Pnz-f3-qDW"/>
+                <outlet property="versionLbl" destination="CoR-Se-gYx" id="6qO-MK-wtJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沐风影音" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULz-1J-Mgq">
+                    <rect key="frame" x="123" y="260" width="129.5" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" red="0.11497942360000001" green="0.1434346735" blue="0.18241438269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沐风科技 版权所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7W-wc-QHj">
+                    <rect key="frame" x="112" y="556" width="151.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.52941176470588236" green="0.5607843137254902" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoR-Se-gYx">
+                    <rect key="frame" x="137" y="301" width="100.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.2353625" green="0.2797811925" blue="0.34042689199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutMe" translatesAutoresizingMaskIntoConstraints="NO" id="Aoo-nP-7eY">
+                    <rect key="frame" x="159" y="180" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="1FJ-gW-kel"/>
+                        <constraint firstAttribute="height" constant="56" id="mmg-eN-DHE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017-2019. All right reserved " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ig-jq-imz">
+                    <rect key="frame" x="42.5" y="585" width="290.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.54525458810000005" green="0.57102864980000001" blue="0.60998445749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CoR-Se-gYx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1nU-I8-6iF"/>
+                <constraint firstAttribute="bottom" secondItem="7ig-jq-imz" secondAttribute="bottom" constant="64" id="DBr-4f-7Uz"/>
+                <constraint firstItem="Aoo-nP-7eY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="180" id="DMy-2b-2KM"/>
+                <constraint firstItem="Aoo-nP-7eY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gb4-Mn-PME"/>
+                <constraint firstItem="CoR-Se-gYx" firstAttribute="top" secondItem="ULz-1J-Mgq" secondAttribute="bottom" constant="2.5" id="NHQ-rD-Mot"/>
+                <constraint firstItem="ULz-1J-Mgq" firstAttribute="top" secondItem="Aoo-nP-7eY" secondAttribute="bottom" constant="24" id="NbK-WR-wtF"/>
+                <constraint firstItem="7ig-jq-imz" firstAttribute="top" secondItem="I7W-wc-QHj" secondAttribute="bottom" constant="7.5" id="Rpa-Dp-a5M"/>
+                <constraint firstItem="7ig-jq-imz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hMG-y6-AVk"/>
+                <constraint firstItem="7ig-jq-imz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hSf-S0-Vey"/>
+                <constraint firstItem="ULz-1J-Mgq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mRx-5x-UHH"/>
+                <constraint firstItem="I7W-wc-QHj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nRF-L5-Tqi"/>
+                <constraint firstItem="7ig-jq-imz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uPC-7W-Q2W"/>
+            </constraints>
+            <point key="canvasLocation" x="-96" y="-97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutMe" width="81" height="81"/>
+    </resources>
+</document>

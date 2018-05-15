@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MFDropBoxTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-hJ-WZW">
+                        <rect key="frame" x="56" y="8" width="225" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKD-Lf-Irc">
+                        <rect key="frame" x="268" y="7.5" width="49" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="LNp-1E-ggh"/>
+                            <constraint firstAttribute="width" constant="49" id="W47-G7-SMI"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="dowmloadButton"/>
+                        <connections>
+                            <action selector="downLoadData:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Vr-qK-ORB"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JxH-vE-hQH">
+                        <rect key="frame" x="15" y="9" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="Kc0-Jq-7Km"/>
+                            <constraint firstAttribute="height" constant="26" id="zuS-I5-Clv"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUv-IQ-2No">
+                        <rect key="frame" x="273" y="12" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Kcx-6I-KnV"/>
+                            <constraint firstAttribute="width" constant="42" id="OnG-WR-tnP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SUv-IQ-2No" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7KK-g5-Bhu"/>
+                    <constraint firstAttribute="trailing" secondItem="SUv-IQ-2No" secondAttribute="trailing" constant="5" id="LAa-CD-dqy"/>
+                    <constraint firstItem="xKD-Lf-Irc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VUw-jt-Z6p"/>
+                    <constraint firstAttribute="bottom" secondItem="Yka-hJ-WZW" secondAttribute="bottom" constant="8" id="XHs-Og-CUC"/>
+                    <constraint firstItem="Yka-hJ-WZW" firstAttribute="leading" secondItem="JxH-vE-hQH" secondAttribute="trailing" constant="15" id="ZOP-lT-Jgc"/>
+                    <constraint firstItem="Yka-hJ-WZW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zgn-ih-uNc"/>
+                    <constraint firstItem="JxH-vE-hQH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="osg-K3-DhS"/>
+                    <constraint firstItem="JxH-vE-hQH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xxh-pC-RK3"/>
+                    <constraint firstItem="Yka-hJ-WZW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yd5-rM-cLH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Yka-hJ-WZW" secondAttribute="trailing" constant="39" id="C6R-h3-c6t"/>
+                <constraint firstAttribute="trailing" secondItem="xKD-Lf-Irc" secondAttribute="trailing" constant="3" id="Ixi-O7-pbn"/>
+            </constraints>
+            <connections>
+                <outlet property="downloadBtn" destination="xKD-Lf-Irc" id="vVj-LH-5hw"/>
+                <outlet property="imgHeight" destination="zuS-I5-Clv" id="ldu-8b-cHM"/>
+                <outlet property="imgView" destination="JxH-vE-hQH" id="KCZ-6J-KG1"/>
+                <outlet property="imgWidth" destination="Kc0-Jq-7Km" id="YXu-0Q-Bpp"/>
+                <outlet property="nameLabel" destination="Yka-hJ-WZW" id="L44-YM-TOy"/>
+                <outlet property="notifyLbl" destination="SUv-IQ-2No" id="ovt-6U-D1x"/>
+            </connections>
+            <point key="canvasLocation" x="-444" y="-345"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dowmloadButton" width="49" height="29"/>
+    </resources>
+</document>

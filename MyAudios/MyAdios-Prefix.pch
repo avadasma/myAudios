@@ -1,0 +1,34 @@
+//
+//  MyAdios-Prefix.pch
+//  MyAdios
+//
+//  Created by chang on 2017/7/12.
+//  Copyright © 2017年 chang. All rights reserved.
+//
+
+#ifndef MyAdios_Prefix_pch
+#define MyAdios_Prefix_pch
+
+#ifdef __OBJC__
+
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MyNavigationViewController.h"
+#import "InternationalUtil.h"
+
+// 添加的预编译
+//#import "ConfuseHeaders.h"
+#import <QuartzCore/QuartzCore.h>
+#import "MacroDefine.h"
+//重新定义NSLog
+#ifdef __OPTIMIZE__  // 正常运行模式使用
+#define NSLog(...) ;
+#else  // DEBUG模式使用
+#define NSLog(...) NSLog(__VA_ARGS__);
+#endif
+
+#endif
+
+
+#endif /* MyAdios_Prefix_pch */

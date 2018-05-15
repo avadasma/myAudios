@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFWiFiShareViewController">
+            <connections>
+                <outlet property="urlAddressLbl" destination="pSb-h3-BSq" id="J5O-N9-HZk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在您的电脑中启动浏览器，输入以下地址：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="537-hn-xrV">
+                    <rect key="frame" x="60" y="200" width="254" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="3Fn-dq-5Yq"/>
+                        <constraint firstAttribute="width" constant="254" id="UYY-MA-8Ts"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.36844462156295776" green="0.36878290772438049" blue="0.36441931128501892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注意：当您向设备上传文件或者通过浏览器浏览或下载设备上的文件时，请不要退出此界面。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiN-in-lPC">
+                    <rect key="frame" x="60" y="286" width="279" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="279" id="KHh-K5-gd2"/>
+                        <constraint firstAttribute="height" constant="69" id="gq9-vF-2yE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.36844462156295776" green="0.36878290772438049" blue="0.36441931128501892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://192.168.1.10:8080" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSb-h3-BSq">
+                    <rect key="frame" x="60" y="246" width="254" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="A6K-Eq-1ih"/>
+                        <constraint firstAttribute="width" constant="254" id="phE-Eg-Wke"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.36844462156295776" green="0.36878290772438049" blue="0.36441931128501892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pSb-h3-BSq" firstAttribute="top" secondItem="537-hn-xrV" secondAttribute="bottom" id="6bP-rg-mXJ"/>
+                <constraint firstItem="537-hn-xrV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="Q0a-v2-cEW"/>
+                <constraint firstItem="537-hn-xrV" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="180" id="fdC-yi-2Pi"/>
+                <constraint firstItem="ZiN-in-lPC" firstAttribute="top" secondItem="pSb-h3-BSq" secondAttribute="bottom" constant="19" id="hxK-P6-VKu"/>
+                <constraint firstItem="ZiN-in-lPC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="nwQ-aB-2hS"/>
+                <constraint firstItem="pSb-h3-BSq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="v22-iT-UzG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

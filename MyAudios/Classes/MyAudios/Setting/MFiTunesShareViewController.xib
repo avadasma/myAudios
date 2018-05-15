@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFiTunesShareViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8l-VQ-WBd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcq-Ek-46z" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请将手机用数据线连接到电脑，打开 iTunes ，选中文件共享，在应用列表选择沐风影音，拖动右边滚动栏，选择添加按钮，选择音视频文件到手机即可。如下图所示:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nue-vk-1lF">
+                                    <rect key="frame" x="37" y="17" width="300" height="84"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="300" id="BFU-yA-SME"/>
+                                        <constraint firstAttribute="height" constant="84" id="Srr-W7-5Fo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.52941176470588236" green="0.5607843137254902" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunes0" translatesAutoresizingMaskIntoConstraints="NO" id="SOI-Qy-qJ4">
+                                    <rect key="frame" x="126" y="109" width="122" height="142"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="122" id="IYR-Id-81S"/>
+                                        <constraint firstAttribute="height" constant="142" id="rJX-sl-GPV"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunes1" translatesAutoresizingMaskIntoConstraints="NO" id="SLE-gU-ygO">
+                                    <rect key="frame" x="123.5" y="266" width="126" height="142"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="126" id="Xbb-Vy-pPU"/>
+                                        <constraint firstAttribute="height" constant="142" id="o0l-gr-hY5"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunes2" translatesAutoresizingMaskIntoConstraints="NO" id="Cas-QV-jvg">
+                                    <rect key="frame" x="126" y="423" width="122" height="142"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="142" id="6o6-GQ-moR"/>
+                                        <constraint firstAttribute="width" constant="122" id="pS5-0Q-dOv"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Cas-QV-jvg" secondAttribute="bottom" constant="28" id="DGC-5w-ItV"/>
+                                <constraint firstItem="nue-vk-1lF" firstAttribute="top" secondItem="Fcq-Ek-46z" secondAttribute="top" constant="17" id="K7i-2k-vkV"/>
+                                <constraint firstItem="nue-vk-1lF" firstAttribute="centerX" secondItem="Fcq-Ek-46z" secondAttribute="centerX" id="MlO-3u-cK2"/>
+                                <constraint firstItem="Cas-QV-jvg" firstAttribute="top" secondItem="SLE-gU-ygO" secondAttribute="bottom" constant="15" id="cXd-Bf-Q35"/>
+                                <constraint firstItem="SOI-Qy-qJ4" firstAttribute="centerX" secondItem="Fcq-Ek-46z" secondAttribute="centerX" id="hcs-tm-jrp"/>
+                                <constraint firstItem="SLE-gU-ygO" firstAttribute="centerX" secondItem="Fcq-Ek-46z" secondAttribute="centerX" constant="-1" id="mfu-mv-Tby"/>
+                                <constraint firstItem="SOI-Qy-qJ4" firstAttribute="top" secondItem="nue-vk-1lF" secondAttribute="bottom" constant="8" id="pEa-Ze-1Ba"/>
+                                <constraint firstItem="SLE-gU-ygO" firstAttribute="top" secondItem="SOI-Qy-qJ4" secondAttribute="bottom" constant="15" id="u7P-bv-YJ7"/>
+                                <constraint firstItem="Cas-QV-jvg" firstAttribute="centerX" secondItem="Fcq-Ek-46z" secondAttribute="centerX" id="yuu-4B-mq1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Fcq-Ek-46z" firstAttribute="leading" secondItem="o8l-VQ-WBd" secondAttribute="leading" id="3Sd-uX-vre"/>
+                        <constraint firstItem="Fcq-Ek-46z" firstAttribute="height" secondItem="o8l-VQ-WBd" secondAttribute="height" priority="999" id="85u-xj-ulp"/>
+                        <constraint firstAttribute="bottom" secondItem="Fcq-Ek-46z" secondAttribute="bottom" constant="1" id="A9f-Ao-xps"/>
+                        <constraint firstItem="Fcq-Ek-46z" firstAttribute="top" secondItem="o8l-VQ-WBd" secondAttribute="top" id="Qoi-df-yln"/>
+                        <constraint firstAttribute="trailing" secondItem="Fcq-Ek-46z" secondAttribute="trailing" id="gzr-Cy-keL"/>
+                        <constraint firstItem="Fcq-Ek-46z" firstAttribute="width" secondItem="o8l-VQ-WBd" secondAttribute="width" id="wxi-b2-xly"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o8l-VQ-WBd" secondAttribute="bottom" id="3kJ-mV-MJ4"/>
+                <constraint firstItem="o8l-VQ-WBd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P4m-gr-80G"/>
+                <constraint firstAttribute="trailing" secondItem="o8l-VQ-WBd" secondAttribute="trailing" id="WGP-Qx-JVD"/>
+                <constraint firstItem="o8l-VQ-WBd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rtK-2J-Yil"/>
+            </constraints>
+            <point key="canvasLocation" x="-635" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iTunes0" width="122" height="142"/>
+        <image name="iTunes1" width="122" height="142"/>
+        <image name="iTunes2" width="122" height="142"/>
+    </resources>
+</document>
